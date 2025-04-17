@@ -23,6 +23,13 @@ int main() {
 
      int linhaHorizontal = 2;
      int colunaHorizontal = 4;
+
+      // Verificar se o navio cabe no tabuleiro (horizontal)
+    if (colunaHorizontal + TAMANHO_NAVIO <= TAMANHO_TABULEIRO) {
+        for (int i = 0; i < TAMANHO_NAVIO; i++) {
+            tabuleiro[linhaHorizontal][colunaHorizontal + i] = navioHorizontal[i];
+        }
+    }
  
 
     return 0;
