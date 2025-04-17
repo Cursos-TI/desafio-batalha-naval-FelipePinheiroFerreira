@@ -55,5 +55,16 @@ int main() {
         printf("Erro: Sobreposição detectada! Navio vertical não posicionado.\n");
     }
 
+   // Exibir o tabuleiro
+
+   printf("\n=== Tabuleiro Batalha Naval ===\n\n");
+
+   for (int linha = 0; linha < TAMANHO_TABULEIRO; linha++) {
+       for (int coluna = 0; coluna < TAMANHO_TABULEIRO; coluna++) {
+           printf("%d ", tabuleiro[linha][coluna]);
+       }
+       printf("\n");
+   }
+
     return 0;
 }
