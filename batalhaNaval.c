@@ -14,5 +14,10 @@ int main() {
         }
     }
 
+     // Definir navios
+
+     int navioHorizontal[TAMANHO_NAVIO] = {3, 3, 3}; 
+     int navioVertical[TAMANHO_NAVIO] = {3, 3, 3};   
+
     return 0;
 }
