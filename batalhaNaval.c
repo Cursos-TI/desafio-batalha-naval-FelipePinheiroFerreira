@@ -35,5 +35,25 @@ int main() {
     int linhaVertical = 5;
     int colunaVertical = 6;
 
+     // Verificar se o navio cabe no tabuleiro (vertical)
+    // E verificar se não haverá sobreposição
+    int sobreposicao = 0;
+    if (linhaVertical + TAMANHO_NAVIO <= TAMANHO_TABULEIRO) {
+        for (int i = 0; i < TAMANHO_NAVIO; i++) {
+            if (tabuleiro[linhaVertical + i][colunaVertical] != 0) {
+                sobreposicao = 1;
+                break;
+            }
+        }
+    }
+
+    if (!sobreposicao) {
+        for (int i = 0; i < TAMANHO_NAVIO; i++) {
+            tabuleiro[linhaVertical + i][colunaVertical] = navioVertical[i];
+        }
+    } else {
+        printf("Erro: Sobreposição detectada! Navio vertical não posicionado.\n");
+    }
+
     return 0;
 }
