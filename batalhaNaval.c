@@ -31,6 +31,9 @@ int main() {
         }
     }
  
+    // Coordenadas do navio vertical (coluna fixa, linha variável)
+    int linhaVertical = 5;
+    int colunaVertical = 6;
 
     return 0;
 }
