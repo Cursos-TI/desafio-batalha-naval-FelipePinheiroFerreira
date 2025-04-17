@@ -19,5 +19,11 @@ int main() {
      int navioHorizontal[TAMANHO_NAVIO] = {3, 3, 3}; 
      int navioVertical[TAMANHO_NAVIO] = {3, 3, 3};   
 
+     // Posicionar os navios
+
+     int linhaHorizontal = 2;
+     int colunaHorizontal = 4;
+ 
+
     return 0;
 }
